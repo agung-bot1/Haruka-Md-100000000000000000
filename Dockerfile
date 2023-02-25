@@ -10,9 +10,7 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm install && npm start qrcode-terminal
-
-COPY . .
+RUN npm install && npm start 
 
 EXPOSE 5000
 
